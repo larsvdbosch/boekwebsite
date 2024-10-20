@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+}
+ 
+body {
+    background-color: #FFF9F0;
+    margin: 0;
+}
+ 
+.readButton {
+    position: fixed;
+    bottom: 10%;
+    left: 30%;
+    z-index: 10;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #000 1px;
+    background-color: #FFC70F;
+    text-decoration: none;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
+ 
+.readButton h2 {
+    font-size: 18px;
+    color: black;
+}
+ 
+.maincontainer {
+    margin: 80px 15px 180px 15px;
+}
+ 
+.titlecontainer {
+    position: relative;
+    width: calc(100% - 5px);
+    display: flex;
+    height: 55px;
+    margin-right: -5px;
+}
+ 
+.titlecontainer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    margin: 5px 0 0 5px;
+    border: solid #000 1px;
+    z-index: -1;
+}
+ 
+.backButton {
+    flex: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: #FBC40F;
+    border: solid #000 1px;
+}
+ 
+.backButton svg {
+    width: 100%;
+    background-color: transparent;
+}
+ 
+.booktitleContainer {
+    flex: 0;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #283886;
+    border: solid #000 1px;
+}
+ 
+.bookTitle {
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+}
+ 
+.bookContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    gap: 20px;
+}
+ 
+.imgcontainer {
+    flex: 0;
+    flex-grow: 2;
+}
+ 
+.imgcontainer img {
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    margin: 0 5px 5px 0;
+}
+ 
+.contentContainer {
+    flex: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.infoblockContainer {
+    margin-bottom: 100px;
+}
+ 
+.infoBlock {
+    position: relative;
+    border: solid #000 1px;
+    padding: 15px 40px 30px 40px;
+    margin-top: 40px;
+    overflow: hidden;
+    height: 10px;
+    transition: all .8s cubic-bezier(.65,0,.35,1);
+}
+ 
+.blockIconOpen {
+    width: 25px;
+    height: 25px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path d="M0 10h24v2h-24z"/></svg>');
+}
+ 
+.blockIconClosed {
+    width: 25px;
+    height: 25px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path></svg>');
+}
+ 
+.infoTitle {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+ 
+.infoText {
+    width: 100%;
+}

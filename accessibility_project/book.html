@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Shop</title>
+    <link rel="stylesheet" href="bookstyles.css">
+</head>
+<body>
+ 
+    <a class="readButton" href="#">
+        <h2><strong>Read</strong></h2>
+    </a>
+    <div class="maincontainer">
+        <div class="titlecontainer">
+            <a href="./index.html" class="backButton">
+                <svg width="78" height="32" viewBox="0 0 52 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="2.70711" y1="10.881" x2="11.4734" y2="19.6473" stroke="black" stroke-width="2"/>
+                    <line x1="1.29289" y1="10.881" x2="10.881" y2="1.29291" stroke="black" stroke-width="2"/>
+                    <line x1="2" y1="10" x2="52" y2="10" stroke="black" stroke-width="2"/>
+                </svg>
+            </a>
+            <div class="booktitleContainer">
+                <h2 class="bookTitle">Love of my life</h2>
+            </div>
+        </div>
+        <div class="bookContainer">
+            <div class="imgcontainer">
+                <img src="img/hide and seek.png"/>
+            </div>
+            <div class="contentContainer">
+                <div class="contentblock">
+                    <h3>Author</h3>
+                    <p>Somebody</p>
+                </div>
+                <div class="contentblock">
+                    <h3>Price</h3>
+                    <p>Free this time</p>
+                </div>
+                <div class="contentblock">
+                    <h3>Page number</h3>
+                    <p>245</p>
+                </div>
+                <div class="contentblock">
+                    <h3>Level</h3>
+                    <p>B1</p>
+                </div>
+                <div class="contentblock">
+                    <h3>Score</h3>
+                    <svg width="81" height="13" viewBox="0 0 81 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 1.61803L7.48381 4.6459L7.59607 4.99139H7.95934H11.143L8.56737 6.86271L8.27348 7.07624L8.38573 7.42173L9.36955 10.4496L6.79389 8.57827L6.5 8.36475L6.20611 8.57827L3.63045 10.4496L4.61426 7.42173L4.72652 7.07624L4.43263 6.86271L1.85697 4.99139H5.04066H5.40393L5.51619 4.6459L6.5 1.61803Z" fill="black" stroke="black"/>
+                        <path d="M23.5 1.61803L24.4838 4.6459L24.5961 4.99139H24.9593H28.143L25.5674 6.86271L25.2735 7.07624L25.3857 7.42173L26.3695 10.4496L23.7939 8.57827L23.5 8.36475L23.2061 8.57827L20.6305 10.4496L21.6143 7.42173L21.7265 7.07624L21.4326 6.86271L18.857 4.99139H22.0407H22.4039L22.5162 4.6459L23.5 1.61803Z" fill="black" stroke="black"/>
+                        <path d="M40.5 1.61803L41.4838 4.6459L41.5961 4.99139H41.9593H45.143L42.5674 6.86271L42.2735 7.07624L42.3857 7.42173L43.3695 10.4496L40.7939 8.57827L40.5 8.36475L40.2061 8.57827L37.6305 10.4496L38.6143 7.42173L38.7265 7.07624L38.4326 6.86271L35.857 4.99139H39.0407H39.4039L39.5162 4.6459L40.5 1.61803Z" fill="black" stroke="black"/>
+                        <path d="M57.5 1.61803L58.4838 4.6459L58.5961 4.99139H58.9593H62.143L59.5674 6.86271L59.2735 7.07624L59.3857 7.42173L60.3695 10.4496L57.7939 8.57827L57.5 8.36475L57.2061 8.57827L54.6305 10.4496L55.6143 7.42173L55.7265 7.07624L55.4326 6.86271L52.857 4.99139H56.0407H56.4039L56.5162 4.6459L57.5 1.61803Z" stroke="black"/>
+                        <path d="M74.5 1.61803L75.4838 4.6459L75.5961 4.99139H75.9593H79.143L76.5674 6.86271L76.2735 7.07624L76.3857 7.42173L77.3695 10.4496L74.7939 8.57827L74.5 8.36475L74.2061 8.57827L71.6305 10.4496L72.6143 7.42173L72.7265 7.07624L72.4326 6.86271L69.857 4.99139H73.0407H73.4039L73.5162 4.6459L74.5 1.61803Z" stroke="black"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="infoblockContainer">
+            <div class="infoBlock" id="infoblock1">
+                <button onclick="toggleBlock(1)" class="infoTitle">
+                    <div class="blockIconClosed" id="blockIcon1"></div>
+                    <h2>Summary</h2>
+                </button>
+                <p class="infoText" id="infotext">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="infoBlock" id="infoblock2">
+                <button onclick="toggleBlock(2)" class="infoTitle">
+                    <div class="blockIconClosed" id="blockIcon2"></div>
+                    <h2>More information</h2>
+                </button>
+                <p class="infoText" id="infotext">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="infoBlock" id="infoblock3">
+                <button onclick="toggleBlock(3)" class="infoTitle">
+                    <div class="blockIconClosed" id="blockIcon3"></div>
+                    <h2>Others</h2>
+                </button>
+                <p class="infoText" id="infotext">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ 
+<script>
+    var infoBlock1 = document.getElementById("infoblock1");
+    var infoBlock2 = document.getElementById("infoblock2");
+    var infoBlock3 = document.getElementById("infoblock3");
+ 
+    var blockIcon1 = document.getElementById("blockIcon1");
+    var blockIcon2 = document.getElementById("blockIcon2");
+    var blockIcon3 = document.getElementById("blockIcon3");
+ 
+    var textHeight = document.getElementById("infotext").offsetHeight;
+ 
+    var opened1 = false;
+    var opened2 = false;
+    var opened3 = false;
+ 
+    function toggleBlock(block) {
+ 
+        if (block == 1) {
+ 
+            if (opened1 == false) {
+                infoBlock1.style.height = textHeight + 40 + "px";
+                blockIcon1.className = "blockIconOpen";
+                opened1 = true;
+ 
+            } else {
+                infoBlock1.style.height = "10px";
+                blockIcon1.className = "blockIconClosed";
+                opened1 = false;
+            }
+ 
+        } else if (block == 2) {
+            
+            if (opened2 == false) {
+                infoBlock2.style.height = textHeight + 40 + "px";
+                blockIcon2.className = "blockIconOpen";
+                opened2 = true;
+ 
+            } else {
+                infoBlock2.style.height = "10px";
+                blockIcon2.className = "blockIconClosed";
+                opened2 = false;
+            }
+ 
+        } else {
+ 
+            if (opened3 == false) {
+                infoBlock3.style.height = textHeight + 40 + "px";
+                blockIcon3.className = "blockIconOpen";
+                opened3 = true;
+ 
+            } else {
+                infoBlock3.style.height = "10px";
+                blockIcon3.className = "blockIconClosed";
+                opened3 = false;
+            }
+            
+        }
+    }
+ 
+</script>
